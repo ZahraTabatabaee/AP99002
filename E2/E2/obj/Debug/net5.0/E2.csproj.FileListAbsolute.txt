@@ -1,0 +1,16 @@
+c:\git\AP99002\E2\E2\obj\Debug\net5.0\E2.csprojAssemblyReference.cache
+c:\git\AP99002\E2\E2\obj\Debug\net5.0\E2.GeneratedMSBuildEditorConfig.editorconfig
+c:\git\AP99002\E2\E2\obj\Debug\net5.0\E2.AssemblyInfoInputs.cache
+c:\git\AP99002\E2\E2\obj\Debug\net5.0\E2.AssemblyInfo.cs
+c:\git\AP99002\E2\E2\obj\Debug\net5.0\E2.csproj.CoreCompileInputs.cache
+c:\git\AP99002\E2\E2\bin\Debug\net5.0\E2.exe
+c:\git\AP99002\E2\E2\bin\Debug\net5.0\E2.deps.json
+c:\git\AP99002\E2\E2\bin\Debug\net5.0\E2.runtimeconfig.json
+c:\git\AP99002\E2\E2\bin\Debug\net5.0\E2.runtimeconfig.dev.json
+c:\git\AP99002\E2\E2\bin\Debug\net5.0\E2.dll
+c:\git\AP99002\E2\E2\bin\Debug\net5.0\ref\E2.dll
+c:\git\AP99002\E2\E2\bin\Debug\net5.0\E2.pdb
+c:\git\AP99002\E2\E2\obj\Debug\net5.0\E2.dll
+c:\git\AP99002\E2\E2\obj\Debug\net5.0\ref\E2.dll
+c:\git\AP99002\E2\E2\obj\Debug\net5.0\E2.pdb
+c:\git\AP99002\E2\E2\obj\Debug\net5.0\E2.genruntimeconfig.cache

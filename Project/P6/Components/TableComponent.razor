@@ -1,0 +1,20 @@
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Date</th>
+    </tr>
+    @foreach (var c in currencyArr)
+    {
+        <tr>
+            <td>@c.Name</td>
+            <td>@c.Price</td>
+            <td>@c.Date.ToString()</td>
+        </tr>
+    }
+</table>
+
+@code {
+    [Parameter]
+    public Currency[] currencyArr {get;set;}
+}

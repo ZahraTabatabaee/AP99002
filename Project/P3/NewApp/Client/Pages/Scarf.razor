@@ -1,0 +1,102 @@
+@page "/Scarf"
+@using homework.Shared
+@inject HttpClient Http
+@inject NavigationManager UriHelper
+@inject IJSRuntime JS
+
+<h1 style="text-align: center;  color: #260062;" dir=rtl>لیست محصولات</h1>
+
+
+<table style="width: 65%;" class="table">
+    <thead>
+        <tr>
+            <th>تصویر کالا</th>
+            <th>نام کالا</th>
+            <th>دسته بندی کالا</th>
+            <th>اطلاعات</th>
+            <th>قیمت</th>
+            <th>      </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var k in things)
+        {
+            <tr>
+                <td><img style="width: 30px; height: 45px;" src=@k.p_link></td>
+                <td>@k.p_name</td>
+                <td>@k.p_category</td>
+                <td>@k.p_info</td>
+                <td>@k.p_price</td>
+                <td><button @onclick=@(() => addtocart(k))>اضافه به سبد خرید</button></td>
+            </tr>
+
+        }
+    </tbody>
+    <style>
+        .button {
+            background-color: #4CAF50; 
+            border: none;
+            position: absolute;
+            right: 38%;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            width: 50%;
+        }
+        .button2 {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #260062;
+        }
+        .button2:hover {
+            background-color: #260062;
+            color: white;
+        }
+    </style>
+</table>
+<button class="button button2" @onclick=@Navigate1>رفتن به دسته بندی</button>
+<br><br><br>
+<button class="button button2" @onclick=@Navigate2>پایان خرید</button>
+
+@code {
+    private kala[] things = new kala[] 
+    {
+        new kala("روسری مدل 1","روسری","گلبهی",100000,"https://st4.depositphotos.com/12949544/28909/v/1600/depositphotos_289099012-stock-illustration-beautiful-moslem-girl-hijab-vector.jpg"),
+        new kala("روسری مدل 1","روسری","زرشکی",110000,"https://st4.depositphotos.com/12949544/28473/v/1600/depositphotos_284731890-stock-illustration-beautiful-moslem-girl-hijab-vector.jpg"),
+        new kala("روسری مدل 3","روسری","قهوه ای",115000,"https://st4.depositphotos.com/12949544/29201/v/950/depositphotos_292015116-stock-illustration-beautiful-moslem-girl-hijab-vector.jpg"),
+        new kala("روسری مدل 4","روسری","کرمی",120000,"https://thumbs.dreamstime.com/b/beautiful-moslem-girl-hijab-vector-design-logo-icon-sign-illustration-template-177412979.jpg")
+    };
+    public async Task addtocart(kala ka)
+    {
+        @* public Shopping pr = new Shopping(ka); *@
+        @* Shopping.k_p = ka ; *@
+        if (!Shopping.ShopList.Contains(ka))
+        {
+            Shopping.ShopList.Add(ka);
+            ka.Count += 1;
+            Shopping.sum += ka.p_price;
+        }
+        else
+        {
+            ka.Count += 1;
+            Shopping.sum += ka.p_price;
+        }
+        await JS.InvokeVoidAsync(
+                "alert",
+                $"با موفقیت به لیست خرید اضافه شد");  
+    }
+    void Navigate1()
+    {
+        UriHelper.NavigateTo("/Category");
+    }
+    void Navigate2()
+    {
+        UriHelper.NavigateTo("/shoppinglist");
+    }
+}

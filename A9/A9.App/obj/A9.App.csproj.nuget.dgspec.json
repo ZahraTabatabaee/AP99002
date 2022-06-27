@@ -1,0 +1,116 @@
+{
+  "format": 1,
+  "restore": {
+    "c:\\git\\AP99002\\A9\\A9.App\\A9.App.csproj": {}
+  },
+  "projects": {
+    "c:\\git\\AP99002\\A9\\A9.App\\A9.App.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\git\\AP99002\\A9\\A9.App\\A9.App.csproj",
+        "projectName": "A9.App",
+        "projectPath": "c:\\git\\AP99002\\A9\\A9.App\\A9.App.csproj",
+        "packagesPath": "C:\\Users\\Farayab_digital\\.nuget\\packages\\",
+        "outputPath": "c:\\git\\AP99002\\A9\\A9.App\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Farayab_digital\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "c:\\git\\AP99002\\A9\\A9.Lib\\A9.Lib.csproj": {
+                "projectPath": "c:\\git\\AP99002\\A9\\A9.Lib\\A9.Lib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\git\\AP99002\\A9\\A9.Lib\\A9.Lib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\git\\AP99002\\A9\\A9.Lib\\A9.Lib.csproj",
+        "projectName": "A9.Lib",
+        "projectPath": "c:\\git\\AP99002\\A9\\A9.Lib\\A9.Lib.csproj",
+        "packagesPath": "C:\\Users\\Farayab_digital\\.nuget\\packages\\",
+        "outputPath": "c:\\git\\AP99002\\A9\\A9.Lib\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Farayab_digital\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

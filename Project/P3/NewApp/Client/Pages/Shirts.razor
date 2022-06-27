@@ -1,0 +1,103 @@
+@page "/Shirts"
+@using homework.Shared
+@inject HttpClient Http
+@inject NavigationManager UriHelper
+@inject IJSRuntime JS
+
+<h1 style="text-align: center;  color: #260062;" dir=rtl>لیست محصولات</h1>
+
+
+<table style="width: 65%;" class="table">
+    <thead>
+        <tr>
+            <th>تصویر کالا</th>
+            <th>نام کالا</th>
+            <th>دسته بندی کالا</th>
+            <th>اطلاعات</th>
+            <th>قیمت</th>
+            <th>      </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var k in things)
+        {
+            <tr>
+                <td><img style="width: 30px; height: 45px;" src=@k.p_link></td>
+                <td>@k.p_name</td>
+                <td>@k.p_category</td>
+                <td>@k.p_info</td>
+                <td>@k.p_price</td>
+                <td><button @onclick=@(() => addtocart(k))>اضافه به سبد خرید</button></td>
+            </tr>
+
+        }
+    </tbody>
+    <style>
+        .button {
+            background-color: #4CAF50; 
+            border: none;
+            position: absolute;
+            right: 38%;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            width: 50%;
+        }
+        .button2 {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #260062;
+        }
+        .button2:hover {
+            background-color: #260062;
+            color: white;
+        }
+    </style>
+</table>
+<button class="button button2" @onclick=@Navigate1>رفتن به دسته بندی</button>
+<br><br><br>
+<button class="button button2" @onclick=@Navigate2>پایان خرید</button>
+
+@code {
+    private kala[] things = new kala[] 
+    {
+        new kala("پیراهن مدل 1","پیراهن","پیراهن آستین کوتاه آبی",100000,"https://cdn4.vectorstock.com/i/1000x1000/43/23/short-sleeved-men-shirt-icon-cartoon-style-vector-8104323.jpg"),
+        new kala("پیراهن مدل 2","پیراهن","پیراهن آستین بلند آبی",110000,"https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX25037269.jpg"),
+        new kala("پیراهن مدل 3","پیراهن","پیراهن آستین کوتاه سفید طرح دار",100000,"https://w7.pngwing.com/pngs/442/163/png-transparent-t-shirt-clothing-designer-cartoon-t-shirt-cartoon-character-tshirt-white.png"),
+        new kala("پیراهن مدل 4","پیراهن","پیراهن آستین کوتاه سبز",100000,"https://image.shutterstock.com/image-vector/green-tshirt-cartoon-vector-illustration-260nw-254808316.jpg"),
+        new kala("پیراهن مدل 5","پیراهن","پیراهن بلند خاکی",120000,"https://previews.123rf.com/images/pandavector/pandavector1703/pandavector170302570/74148794-women-s-shirt-with-a-belt-for-housework-a-dirty-white-apron-for-women-women-clothing-single-icon-in-.jpg")
+    };
+    public async Task addtocart(kala ka)
+    {
+        @* public Shopping pr = new Shopping(ka); *@
+        @* Shopping.k_p = ka ; *@
+        if (!Shopping.ShopList.Contains(ka))
+        {
+            Shopping.ShopList.Add(ka);
+            ka.Count += 1;
+            Shopping.sum += ka.p_price;
+        }
+        else
+        {
+            ka.Count += 1;
+            Shopping.sum += ka.p_price;
+        }
+        await JS.InvokeVoidAsync(
+                "alert",
+                $"با موفقیت به لیست خرید اضافه شد");  
+    }
+    void Navigate1()
+    {
+        UriHelper.NavigateTo("/Category");
+    }
+    void Navigate2()
+    {
+        UriHelper.NavigateTo("/shoppinglist");
+    }
+}

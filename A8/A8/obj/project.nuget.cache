@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Qr+TIyOuy6rNiNgyQ7lww4dB0okVf+E+1GaIhTfjfUT/ar/2xxeyRyoPq+43ESjD5cQVjpJ/hJQdQNrr+s7Q8g==",
+  "success": true,
+  "projectFilePath": "c:\\Git\\AP99002\\A8\\A8\\A8.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lenovo-irG\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}

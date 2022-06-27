@@ -1,0 +1,12 @@
+c:\git\AP99002\A9\A9.Lib\bin\Debug\net5.0\A9.Lib.deps.json
+c:\git\AP99002\A9\A9.Lib\bin\Debug\net5.0\A9.Lib.dll
+c:\git\AP99002\A9\A9.Lib\bin\Debug\net5.0\ref\A9.Lib.dll
+c:\git\AP99002\A9\A9.Lib\bin\Debug\net5.0\A9.Lib.pdb
+c:\git\AP99002\A9\A9.Lib\obj\Debug\net5.0\A9.Lib.csprojAssemblyReference.cache
+c:\git\AP99002\A9\A9.Lib\obj\Debug\net5.0\A9.Lib.GeneratedMSBuildEditorConfig.editorconfig
+c:\git\AP99002\A9\A9.Lib\obj\Debug\net5.0\A9.Lib.AssemblyInfoInputs.cache
+c:\git\AP99002\A9\A9.Lib\obj\Debug\net5.0\A9.Lib.AssemblyInfo.cs
+c:\git\AP99002\A9\A9.Lib\obj\Debug\net5.0\A9.Lib.csproj.CoreCompileInputs.cache
+c:\git\AP99002\A9\A9.Lib\obj\Debug\net5.0\A9.Lib.dll
+c:\git\AP99002\A9\A9.Lib\obj\Debug\net5.0\ref\A9.Lib.dll
+c:\git\AP99002\A9\A9.Lib\obj\Debug\net5.0\A9.Lib.pdb

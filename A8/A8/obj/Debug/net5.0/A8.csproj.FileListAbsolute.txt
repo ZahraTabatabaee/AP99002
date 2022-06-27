@@ -1,0 +1,16 @@
+c:\Git\AP99002\A8\A8\bin\Debug\net5.0\A8.exe
+c:\Git\AP99002\A8\A8\bin\Debug\net5.0\A8.deps.json
+c:\Git\AP99002\A8\A8\bin\Debug\net5.0\A8.runtimeconfig.json
+c:\Git\AP99002\A8\A8\bin\Debug\net5.0\A8.runtimeconfig.dev.json
+c:\Git\AP99002\A8\A8\bin\Debug\net5.0\A8.dll
+c:\Git\AP99002\A8\A8\bin\Debug\net5.0\A8.pdb
+c:\Git\AP99002\A8\A8\obj\Debug\net5.0\A8.csproj.AssemblyReference.cache
+c:\Git\AP99002\A8\A8\obj\Debug\net5.0\A8.GeneratedMSBuildEditorConfig.editorconfig
+c:\Git\AP99002\A8\A8\obj\Debug\net5.0\A8.AssemblyInfoInputs.cache
+c:\Git\AP99002\A8\A8\obj\Debug\net5.0\A8.AssemblyInfo.cs
+c:\Git\AP99002\A8\A8\obj\Debug\net5.0\A8.csproj.CoreCompileInputs.cache
+c:\Git\AP99002\A8\A8\obj\Debug\net5.0\A8.dll
+c:\Git\AP99002\A8\A8\obj\Debug\net5.0\refint\A8.dll
+c:\Git\AP99002\A8\A8\obj\Debug\net5.0\A8.pdb
+c:\Git\AP99002\A8\A8\obj\Debug\net5.0\A8.genruntimeconfig.cache
+c:\Git\AP99002\A8\A8\obj\Debug\net5.0\ref\A8.dll

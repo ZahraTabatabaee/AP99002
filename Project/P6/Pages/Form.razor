@@ -1,0 +1,35 @@
+@page "/form"
+
+<EditForm Model="@currency" OnValidSubmit="@AddData">
+    <p>
+        <label>Name</label>
+        <InputText @bind-Value="currency.Name"></InputText>
+    </p>
+    <p>
+        <label>Price</label>
+        <InputNumber @bind-Value="currency.Price"></InputNumber>
+    </p>
+    <p>
+        <button type="submit">Add!</button>
+    </p>
+</EditForm>
+
+<p>
+    @foreach (var item in @currencyList)
+    {
+        <p>@item.Name : @item.Price (@item.Date.ToString())</p>
+    }
+</p>
+<TableComponent currencyArr="@currencyList.ToArray()"></TableComponent>
+<ColumnChart currencyArr="@currencyList.ToArray()"></ColumnChart>
+@code{
+    private Currency currency = new Currency();
+    private List<Currency> currencyList = new List<Currency>();
+    
+    private void AddData()
+    {
+        currency.Date = DateTime.Now;
+        currencyList.Add(currency);
+        currency = new Currency();
+    }
+}
